@@ -18,10 +18,10 @@ public class Distribuidora implements Serializable {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	private String nombre;
-	public String telefono;
-	public String correo;
+	private String telefono;
+	private String correo;
 	@OneToMany(mappedBy = "distribuidora")
-	public List<Bodega>bodega;
+	private List<Bodega>bodega;
 	
 	
 	
