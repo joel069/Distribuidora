@@ -3,16 +3,16 @@ package ec.edu.ups.ejb;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import ec.edu.ups.modelo.Bodega;
 
-public class BodegaFacade extends AbstractFacade<Bodega> {
+import ec.edu.ups.modelo.Distribuidora;
 
-	
+public class DistribuidoraFacade extends AbstractFacade<Distribuidora>{
+
 	 @PersistenceContext(unitName = "DistribuidoraProductos")
 	    private EntityManager em;
 	    
-	    public BodegaFacade() {
-		super(Bodega.class);
+	    public DistribuidoraFacade() {
+		super(Distribuidora.class);
 	    }    
 
 	    @Override
